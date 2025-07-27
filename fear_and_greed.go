@@ -26,6 +26,8 @@ func main() {
 		return
 	}
 
+	slog.Info("Program start")
+
 	getAndSendIndex()
 }
 
@@ -64,6 +66,8 @@ func getAndSendIndex() {
 		slog.Warn("sending email")
 		return
 	}
+
+	slog.Info("Email sent")
 }
 
 func sendEmail(message string) error {
